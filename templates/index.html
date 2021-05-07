@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ui</title>
+</head>
+<style>
+  body{
+  background-color:#00008B;
+  margin:0;
+  padding:0;
+  }
+  .sub{
+  float:left;
+  margin-top:10%;
+  margin-left:10%;
+  color:white;
+  display:block;
+  position:absolute;
+  }
+  h1.head{
+   text-shadow:5px 5px 6px white;
+   }
+
+  .popup{
+  display:none;
+  background-color:#87CEFA;
+  height:150px;
+  width:40%;
+  box-shadow:10px 10px 15px 0px;
+  text-align:center;
+  border-radius:5px;
+  overflow-y: scroll; /* Hide vertical scrollbar */
+  }
+
+
+  .popup::-webkit-scrollbar {
+    display: none;
+}
+  .sub:hover .popup{
+  display:block;
+  }
+  h2.pophead{
+  height:40px;
+  width:auto;
+  background-color:#000;
+  color:orange;
+  text-shadow:2px 2px 3px #f1f1f1;
+  }
+
+
+   .search input[type=search]{
+    width:80%;
+    background-color:#f1f1f1;
+    box-shadow:5px 5px 5px 0px cyan;
+    margin-left:20px;
+    text-align:center;
+    margin-top:10px;
+    padding:8px;
+    }
+    .search input[type=submit]{
+    text-align:center;
+    margin-top:10px;
+    padding:8px;
+    height:10%;
+    width:auto;
+   }
+   .search input[type=submit]:hover{
+   background-color:lime;
+   }
+   .cloud a{
+   height:10%;
+   width:auto;
+   background-color:#f1f1f1;
+   display:inline-block;
+   text-decoration:none;
+   text-align:center;
+   box-shadow:2px 2px 0px 4px cyan;
+   margin-left:20px;
+   margin-top:20px;
+   padding:5px;
+   float:left;
+   }
+   .cloud a:hover{
+   background-color:#201d2b;
+   color:white;
+   }
+   .box{
+height:250px;
+width:300px;
+border:1px solid black;
+perspective:1000px;
+background-color: transparent;
+margin-left:60%;
+margin-top:10%;
+box-shadow:5px 5px 20px 5px cyan;
+}
+.container{
+ position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+  }
+  .front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  }
+
+  .front {
+  background-color: #bbb;
+  color: black;
+
+
+}
+.box:hover .container {
+  transform: rotateX(180deg);
+}
+
+.back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+  text-decoration:none;
+  list-style-type:none;
+  padding:5px;
+  }
+  .back a{
+  text-decoration:none;
+  list-style-type:none;
+  }
+  .back a:hover{
+  color:lime;
+  }
+  .follow{
+  margin-top:15%;
+  margin-left:3%;
+
+  }
+  .btn input[type=button]{
+  height:auto;
+  width:8%;
+  font-size:13px;
+  background-color:blue;
+  color:white;
+  box-shadow:10px 10px 10px 0px;
+  border-radius:5px;
+  border:2px solid yellow;
+  }
+  .fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-google {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-youtube {
+  color: white;
+}
+
+.fa-instagram {
+
+  color: white;
+}
+
+}
+</style>
+<body>
+<div class="main">
+    <div class="search">
+        <form>
+            <input type="search" placeholder="search here..">
+            <input type="submit" value="search.." onclick="fun()">
+        </form>
+    </div>
+    <div class="sub">
+        <h1 class="head"><u>Fantastic World</u></h1>
+
+        <h3>We are providing ui design</h3>
+        <p>Now its available on playstore Ios windows and linux...</p>
+        <p>Grab the chance to win free Subscription</p>
+        <div class="popup">
+           <h2 class="pophead">Updates.....</h2>
+            <p>Founded in June 2018, SemiDrive Technology Ltd. is a privately funded semiconductor company focusing on next generation high-performance, automotive grade chip solution. Based in Nanjing, with a R&D team in Shanghai and Beijing. The SemiDrive team has many years of experience in providing automotive chip solutions. It provides leading edge products and services to our customers.
+
+SemiDrive is a member of SAE China. It just closed pre-A run with multimillion dollars funding. As a new member of China automotive chip provider, SemiDrive will introduce three product lines including e-cockpit, ADAS and Gateway later this year. It is believed SemiDrive’s addition will help expend GSA global coverage and influence.
+
+We are looking forward to working with SemiDrive to bring customers a safer, smarter and fun driving experience.</p>
+        </div>
+
+    </div>
+    <div class="cloud">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Converters</a>
+        <a href="login">Login</a>
+        <a href="#" onclick="fun()">Funchatbot</a>
+
+    </div>
+    <div class="box">
+        <div class="container">
+            <div class="front">
+                <h1>Meetings</h1>
+                <p> We Update the any  meets in this according to the schedule.</p><br>
+                <p>Keep in touch and make sure that you available at timings.</p>
+            </div>
+            <div class="back">
+                <h2><u>Today..</u></h2>
+                <a href="https://youtu.be/Y61ouYxYtKE">Official</a><br>
+                <a href="https://youtu.be/Y61ouYxYtKE">Team1</a><br>
+                <a href="https://youtu.be/Y61ouYxYtKE">Team2</a><br>
+                <a href="https://youtu.be/Y61ouYxYtKE">Team3</a><br>
+                <a href="https://youtu.be/Y61ouYxYtKE">Team4</a><br>
+            </div>
+        </div>
+
+    </div>
+</div>
+<section class="follow">
+    <div class="btn">
+       <input type="button" onclick="" value="Signin">
+    </div>
+    <div class="icon">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="https://youtu.be/Y61ouYxYtKE" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </div>
+</section>
+<script>
+    function fun(){
+    alert("it is under developing stage....")
+    }
+</script>
+</body>
+</html>
